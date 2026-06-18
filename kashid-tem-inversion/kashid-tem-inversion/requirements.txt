@@ -1,9 +1,0 @@
-numpy
-pandas
-scipy
-scikit-learn
-tensorflow>=2.10
-matplotlib
-plotly
-pyproj
-joblib
