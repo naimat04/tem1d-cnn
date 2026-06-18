@@ -3,8 +3,7 @@
 A 1D CNN that inverts transient electromagnetic (TEM) voltage-decay
 measurements into layered resistivity/depth profiles, developed for a
 submarine groundwater discharge (SGD) survey at Kashid Beach, Raigad
-District, Maharashtra. This repo is a cleaned-up, script-based version of
-the original `kashid-final.ipynb` notebook.
+District, Maharashtra.
 
 ## What it does
 
