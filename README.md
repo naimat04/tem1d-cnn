@@ -74,3 +74,18 @@ python fence_diagram.py --data-dir data --model-dir outputs --output outputs/TEM
 
 `--data-dir` should contain matching pairs of `Kashid_<id>.mat` (voltage
 data) and `kashid<id>.csv` (station `X_Longitude`/`Y_Latitude`) files.
+
+## Forward model / training data provenance
+
+The synthetic training data (`response` voltage-decay curves paired with
+known `all_resistivity` / `all_depth` layered-earth models) is generated
+using the open-source TEM1D FORTRAN forward solver:
+
+> Christensen, N. B., Christiansen, A. V., Auken, E., & Foged, N. (2026).
+> An open source FORTRAN subroutine for calculation of TEM responses and
+> derivatives from 1D models. *Computers & Geosciences*, 209, 106102.
+
+This repository does not include the forward solver itself — it expects
+a pre-generated `.mat` training file (see `dataset.load_training_mat`)
+containing the forward-modeled curves and their corresponding earth
+models.
